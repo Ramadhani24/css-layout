@@ -1,42 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>coba pasition</title>
+	<meta charset="utf-8">
+	<title>latihan z-index</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+
+		}
+		.satu {background-color: salmon;
+			z-index: 9999;
+
+		}
+		.dua{ background-color: lightgreen;
+			top: 100px;
+			left: 100px;
+			z-index: 2;
+
+		}
+		.tiga{ background-color: royalblue;
+		top: 200px;
+		left: 200px;
+		}
+	</style>
 </head>
-<style>
-	body {
-		height: 2000px;
-	}
-	div {
-		width: 200px;
-		height: 200px;
-		margin: auto;
-	}
-	.satu {
-		background-color: lightgreen
-	}
-	.dua{
-		background-color: violet;
-		position: fixed;
-		height: 40px;
-		width: 100px;
-		top: 0px;
-		left: 0px;
-	}
-	.tiga{
-		background-color: gold;
-
-	}
-	.container {
-		width: 600px;
-		height: 650px;
-		border: 10px solid green;
-		position: relative;
-
-	}
-</style>
 <body>
-	<div class="container">
 	<div class="satu"></div>
 	<div class="dua"></div>
 	<div class="tiga"></div>
